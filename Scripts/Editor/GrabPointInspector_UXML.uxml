@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label text="Grab Point" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: upper-center; -unity-text-outline-width: 0; -unity-text-outline-color: rgb(255, 158, 158); -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); font-size: 18px;" />
+    <uie:PropertyField name="ObjectParent" binding-path="grabParent" style="font-size: 12px; height: -5px;" />
+    <uie:EnumField label="Point Type" value="Center" binding-path="pointType" name="PointType" />
+    <uie:ObjectField label="Orientation Reference" name="OrientationReference" binding-path="orientationReference" type="UnityEngine.Transform, UnityEngine.CoreModule" />
+    <uie:ObjectField label="Main Orientator" name="MainOrientator" binding-path="mainOrientator" type="UnityEngine.Transform, UnityEngine.CoreModule" />
+    <uie:ObjectField label="Secondary Orientator" name="SecodnaryOrientator" binding-path="secondaryOrientator" type="UnityEngine.Transform, UnityEngine.CoreModule" style="height: 19px;" />
+    <uie:ObjectField label="Left Hand Representor" name="LeftHandRepresentro" binding-path="leftHandRepresentor" type="UnityEngine.GameObject, UnityEngine.CoreModule" style="height: 19px;" />
+    <uie:ObjectField label="Right Hand Representor" name="RightHandRepresentro" binding-path="rightHandRepresentor" type="UnityEngine.GameObject, UnityEngine.CoreModule" style="height: 19px;" />
+    <uie:PropertyField name="AlternativveRepresentors" binding-path="additionalOrientators" />
+    <ui:Toggle label="Use Right Hand" name="uerighthand" binding-path="useRightHand" />
+    <ui:Toggle label="Use Left Hand" name="uelefthand" binding-path="useLeftHand" />
+    <ui:Label text="Prior Requirements" display-tooltip-when-elided="true" name="priorGrabSettings" style="-unity-text-align: upper-center; -unity-text-outline-width: 0; -unity-text-outline-color: rgb(255, 158, 158); -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); font-size: 18px;" />
+    <ui:Toggle label="RequirePriorGrab" name="Requireprior" binding-path="requirePrior" />
+    <ui:Toggle label="Prior is Superficial" name="Requireprior" binding-path="priorGrabIsSuperficial" />
+    <uie:PropertyField name="PriorGrab" binding-path="priorRequirement" />
+    <ui:VisualElement name="StandardType">
+        <ui:Label text="Standard Type" display-tooltip-when-elided="true" name="Test" style="-unity-text-align: upper-center; font-size: 15px; margin-top: 5px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="LineType">
+        <ui:Label text="Line Type" display-tooltip-when-elided="true" name="Test" style="-unity-text-align: upper-center; font-size: 15px; margin-top: 5px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="RadialType">
+        <ui:Label text="RadialType" display-tooltip-when-elided="true" name="Test" style="-unity-text-align: upper-center; font-size: 15px; margin-top: 5px;" />
+        <ui:Slider picking-mode="Ignore" label="Grab Radius" value="0.3" high-value="1" binding-path="grabRadius" show-input-field="true" />
+    </ui:VisualElement>
+    <ui:Label text="Pose Settings" display-tooltip-when-elided="true" name="RepresentorTiel" style="-unity-text-align: upper-center; -unity-font-style: bold; font-size: 16px;" />
+    <ui:TextField picking-mode="Ignore" label="Hand pose key" value="filler text" text="filler text" binding-path="animationPoseKey" />
+    <ui:Button text="Apply Pose" display-tooltip-when-elided="true" name="ApplyPose" />
+    <ui:Label text="Offset Settings" display-tooltip-when-elided="true" name="Additional" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 16px;" />
+    <ui:Toggle label="Use offset" name="DoOffset" binding-path="isOffsetGrab" />
+    <ui:Toggle label="Affect Direction" name="AffectDirection" binding-path="onOffsetChangeTranform" />
+    <ui:Label text="Events" display-tooltip-when-elided="true" name="Events" style="-unity-font-style: bold; -unity-text-align: upper-center; font-size: 16px;" />
+    <uie:PropertyField binding-path="OnTriggerDown" name="EventTriggerDown" />
+    <uie:PropertyField binding-path="OnTriggerup" name="EventTriggerUp" />
+    <uie:PropertyField binding-path="OnMainButton" name="EventMainButton" />
+</ui:UXML>

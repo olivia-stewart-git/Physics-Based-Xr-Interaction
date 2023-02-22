@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0880e0dad4b13d046901effa8580b304
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - grabPointPrefab: {fileID: 159701317310727513, guid: a40c73dc3723f2544953c2cde38b942c,
+      type: 3}
+  - visualTree: {fileID: 9197481963319205126, guid: 9ad48e56016650d4daa89f3d83f40ef6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

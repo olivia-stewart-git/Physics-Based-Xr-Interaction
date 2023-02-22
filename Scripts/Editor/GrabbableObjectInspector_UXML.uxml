@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label text="Grabbable Object Settings" display-tooltip-when-elided="true" name="Header" style="opacity: 1; margin-left: 0; -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <ui:TextField picking-mode="Ignore" label="Grabbable Object Name" value="filler text" text="name" name="ObjectName" binding-path="objectName" />
+    <uie:EnumField label="Grab type" value="Center" binding-path="grabType" />
+    <uie:PropertyField binding-path="grabbablePoints" />
+    <ui:Button text="AddGrabPoint" display-tooltip-when-elided="true" name="AddGrabPoints" />
+    <ui:Label text="Physics" display-tooltip-when-elided="true" name="PhysicsSettings" style="opacity: 1; margin-left: 0; -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <uie:FloatField label="Weight in kilograms " value="1" name="Weight" binding-path="weight" />
+    <uie:PropertyField binding-path="centreOfMass" name="CentreOfMass" />
+    <ui:Label text="Events" display-tooltip-when-elided="true" name="Events" style="opacity: 1; margin-left: 0; -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <uie:PropertyField name="EventTriggerDown" binding-path="OnTriggerDown" />
+    <uie:PropertyField name="EventTriggerUp" binding-path="OnTriggerUp" />
+    <uie:PropertyField name="EventTriggerMainButton" binding-path="OnMainButton" />
+    <uie:PropertyField name="EventOnGrab" binding-path="OnObjectGrabbed" />
+    <uie:PropertyField name="EventOnDrop" binding-path="OnObjectDropped" />
+</ui:UXML>
